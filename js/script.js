@@ -36,13 +36,13 @@ function dark_white_mode(event){
     if (event.target.id === 'moon') {
         back.style.backgroundColor = "black";
         text.style.color = 'white';
-        gitLogo.src = "../images/githubLogo/github-mark-white.png"
-        linkedLogo.src = "../images/linkedinLogo/In-White-96.png"
+        gitLogo.src = "images/githubLogo/github-mark-white.png"
+        linkedLogo.src = "images/linkedinLogo/In-White-96.png"
     } else if (event.target.id === 'sun') {
         back.style.backgroundColor = "white";
         text.style.color = 'black';
-        gitLogo.src = "../images/githubLogo/github-mark.png"
-        linkedLogo.src = "../images/linkedinLogo/In-Blue-96.png"
+        gitLogo.src = "images/githubLogo/github-mark.png"
+        linkedLogo.src = "images/linkedinLogo/In-Blue-96.png"
     }
 }
 
