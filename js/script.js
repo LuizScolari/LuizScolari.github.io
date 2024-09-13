@@ -25,4 +25,26 @@ function typeText() {
     }
 }
 
-window.onload = typeText; // Inicia a animação quando a página carregar
+window.onload = typeText;
+
+function dark_white_mode(event){
+    let back = document.getElementById('back');
+    let text = document.getElementById('Text');
+    var gitLogo = document.getElementById('gitLogo');
+    var linkedLogo = document.getElementById('linkedLogo');
+
+    if (event.target.id === 'moon') {
+        back.style.backgroundColor = "black";
+        text.style.color = 'white';
+        gitLogo.src = "../images/githubLogo/github-mark-white.png"
+        linkedLogo.src = "../images/linkedinLogo/In-White-96.png"
+    } else if (event.target.id === 'sun') {
+        back.style.backgroundColor = "white";
+        text.style.color = 'black';
+        gitLogo.src = "../images/githubLogo/github-mark.png"
+        linkedLogo.src = "../images/linkedinLogo/In-Blue-96.png"
+    }
+}
+
+document.getElementById("moon").addEventListener("click", dark_white_mode);
+document.getElementById("sun").addEventListener("click", dark_white_mode);
