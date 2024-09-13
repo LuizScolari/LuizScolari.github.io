@@ -1,4 +1,4 @@
-const texts = ["<>", "Welcome", "to my", "website", "</>"];
+const texts = ["<> Welcome to my website </>"];
 let textIndex = 0;
 let charIndex = 0;
 
