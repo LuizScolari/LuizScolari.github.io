@@ -147,20 +147,11 @@ footer {
     opacity: 0.7;
 }
 
-.experience-item {
+.experience-item, .project-item, .presentation-item {
     margin-bottom: 50px; 
 }
 
-.experience-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-}
-
-.project-item {
-    margin-bottom: 50px; 
-}
-
-.project-item:last-child {
+.experience-item:last-child, .project-item:last-child, .presentation-item:last-child {
     border-bottom: none;
     margin-bottom: 0;
 }
@@ -180,13 +171,4 @@ footer {
     font-style: italic;
     color: #666;
     margin-top: 20px;
-}
-
-.publications-item {
-    margin-bottom: 50px; 
-}
-
-.publications-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
 }
