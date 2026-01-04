@@ -5,34 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <script src="js/script.js" defer></script>
-    <title>Luiz's Website</title>
+    <title>Luiz Roberto Scolari</title>
 </head>
 <body>
-    <div id="back">
-        <div id="dark_white_mode">
-            <p id="moon">🌑</p>
-            <p id="sun">🌞</p>
-        </div>
+    <div class="container">
+        <nav>
+            <button class="tab-btn active" onclick="openTab(event, 'about')">About</button>
+            <button class="tab-btn" onclick="openTab(event, 'experience')">Experience</button>
+            <button class="tab-btn" onclick="openTab(event, 'projects')">Projects</button>
+            <button class="tab-btn" onclick="openTab(event, 'publications')">Publications</button>
+        </nav>
 
-        <div id="Text">
-            <div id="hand">
-                <h1>👋</h1>
+        <div class="content-area">
+            
+            <div id="about" class="tab-content" style="display: block;">
+                <header>
+                    <h1>Luiz Roberto Scolari</h1>
+                    <h2 class="profession">Software Engineer & Researcher</h2>
+                </header>
+
+                <div class="section-block">
+                    <h3>Interests</h3>
+                    <div class="keywords">
+                        <span class="tag">Cryptography</span>
+                        <span class="tag">Combinatorics</span>
+                        <span class="tag">Combinatorial Designs</span>
+                        <span class="tag">Algorithms</span>
+                        <span class="tag">Graph Theory</span>
+                    </div>
+                </div>
+
+                <div class="section-block">
+                    <h3>About Me</h3>
+                    <p class="text-justify">
+                        Hi! My name is Luiz, and I am an undergraduate student in Computer Science at the Federal University of Santa Catarina (UFSC). 
+                        I am actively involved in academic research focusing on combinatorial designs, algorithms, and cryptographic applications—areas in which I have a strong passion and interest. 
+                        Throughout my academic journey, I have participated in various laboratories and projects, including research initiatives, web and mobile development, and other academic activities. 
+                        I am focused, motivated, and committed to continuous learning and to creating innovative and impactful solutions.
+                    </p>
+                </div>
+
+                <div style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #333; text-align: center;">
+                    <div id="images">
+                        <a href="mailto:luizrpscolari@gmail.com">            
+                            <img id="emailLogo" src="images/emailLogo/emailLogo.png" alt="Gmail">
+                        </a>
+                        <a href="https://github.com/LuizScolari" target="_blank">
+                            <img id="gitLogo" src="images/githubLogo/github-mark-white.png" alt="GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/luizscolari" target="_blank">            
+                            <img id="linkedLogo" src="images/linkedinLogo/In-White-96.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <h1 class="hi">Hi, my name is</h1>
-            <h1 class="name">Luiz Roberto Scolari</h1>
-            <br>
-            <div id="animated-text"></div>
-            <h1 class="profession">I'm a software engineer</h1>
-        </div>
 
-        <div id="images">
-            <a href="https://github.com/LuizScolari" target="_blank">
-                <img id="gitLogo" src="images/githubLogo/github-mark.png">
-            </a>
-            <a href="https://www.linkedin.com/in/luizscolari" target="_blank">            
-                <img id="linkedLogo" src="images/linkedinLogo/In-Blue-96.png">
-            </a>
+            <div id="experience" class="tab-content">
+                <h3>Experience</h3>
+
+                <div class="experience-item">
+                    <h4>Academic Research - UFSC</h4>
+                    <span class="date">April 2024 - Present</span>
+                    <div class="location">Florianópolis, Santa Catarina, Brazil</div>
+                    <p class="text-justify">
+                        Engaged in academic research on combinatorics mathematics applied to cryptography.
+                        I explore combinatorial designs in group testing, specifically constructions of Cover-Free Families (CFFs), 
+                        focusing on polynomial constructions over finite fields and exploring other designs. 
+                        My work addresses both the theoretical aspects—generalizing and proposing new designs—and their efficient implementation in C.
+                    </p>
+                </div>
+
+                <div class="experience-item">
+                    <h4>QA Internship - Laboratório Bridge</h4>
+                    <span class="date">November 2024 - July 2025 (9 months)</span>
+                    <div class="location">Florianópolis, Santa Catarina, Brazil · Remote</div>
+                    <p class="text-justify">
+                        Worked as a QA Intern at Laboratório Bridge. In this role, I was responsible for the planning and modeling of test cases, 
+                        as well as setting up the necessary testing environments. My daily tasks involved executing both automated and exploratory tests, 
+                        analyzing and correcting execution errors, and reporting found incidents to ensure the reliability and quality of the software products.
+                    </p>
+                </div>
+                
+                <div class="experience-item">
+                    <h4>PET Computer Science - UFSC</h4>
+                    <span class="date">April 2024 - July 2025 (1 year 4 months)</span>
+                    <div class="location">Florianópolis, Santa Catarina, Brazil · Hybrid</div>
+                    <p class="text-justify">
+                        Participated in the Tutorial Education Program (PET) at UFSC.
+                        During this period, I engaged in various activities focused on the integration of teaching, research, and extension.
+                        My responsibilities included providing academic support to fellow students through tutoring focused on course content, developing community-oriented projects, 
+                        contributing to the development of a web platform for a UFSC sector, and participating in the organization of academic events, such as the Computer Science Academic Week, 
+                        supporting both technical and organizational activities.
+                        This experience strengthened my communication skills, leadership abilities, and commitment to social impact through technology.
+                    </p>
+                </div>
+            </div>
+
+            <div id="projects" class="tab-content">
+                <h3>Projects</h3>
+
+                <div class="project-item">
+                    <h4>
+                        <a href="https://github.com/LuizScolari/Unbounded-CFFs" target="_blank" class="link">
+                            Unbounded-CFFs 🔗
+                        </a>
+                    </h4>
+                    <p class="text-justify">
+                        A high-performance C implementation of unbounded Cover-Free Families (CFFs) based on polynomial constructions over finite fields. 
+                        This project focuses on implementing both embedding families and monotone families of CFFs. 
+                        The implementation employs an optimized strategy of pre-calculating polynomial evaluations and storing them in a nested hash map to efficiently build the CFF binary matrix, a technique referred to as inverted indexes. 
+                        Additionally, a paper has been produced generalizing the construction of the embedding family and detailing this practical implementation.
+                    </p>
+                </div>
+            </div>
+
+            <div id="publications" class="tab-content">
+                <h3>Publications</h3>
+                <p class="loading">Loading publications...</p>
+            </div>
+
         </div>
-    </div>
+        </div>
 </body>
 </html>
